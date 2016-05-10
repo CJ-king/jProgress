@@ -25,6 +25,7 @@
         this.total=option.total;
         this.time=option.time?option.time:500;//动画时间
         this.timer=null;
+        this.init();
     }
     jProgress.prototype={
         init:function(){
