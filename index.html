@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jProgress</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <style type="text/css">
+    .container{
+    	text-align: center;
+    }
+    .can{
+    	width: 300px;
+    	height: 300px;
+    	margin: 0 auto;
+    	display: inline;
+    }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<canvas id="canvas1" class='can'></canvas>
+		<div ><span id="num1">0</span>/1110000</div>
+	</div>
+	<div class="container">
+		<canvas id="canvas2" class='can'></canvas>
+		<div ><span id="num2">0</span>/1110000</div>
+	</div>
+    
+    <script src="js/jProgress.js"></script>
+    <script type="text/javascript">
+    	var img = new Image();   // 创建一个<img>元素
+        img.src = 'img/a.png';
+        var img2 = new Image();   
+        img2.src = 'img/b.png';
+    	window.onload=function(){
+	        var o1=new jProgress({
+	            id:'canvas1',
+	            color:'#45ffcd',
+	            img:img,
+	            total:1110000,
+	            variation:618456,
+	            numid:"num1"
+	        });
+	        o1.init();
+	        var o2=new jProgress({
+	            id:'canvas2',
+	            color:'#ff9937',
+	            img:img,
+	            total:10000,
+	            variation:9000,
+	            numid:"num2"
+	        });
+	        o2.init();
+	    }
+    </script>
+</body>
+</html>
