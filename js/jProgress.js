@@ -14,7 +14,7 @@
         this._H = this._o.offsetHeight;
         this.ctx=this._o.getContext("2d");
         this.groundColor=option.groundColor?option.groundColor:"#e8e8e8";//底色
-        this.lineWidth=option.lineWidth?option.groundColor:5;//边框宽度
+        this.lineWidth=option.lineWidth?option.lineWidth:5;//边框宽度
         this.color=option.color;//进度条颜色
         this._r=this._W/2-10;//半径
         //动画配置
