@@ -1,2 +1,2 @@
-# jProgress
-canvas 环形进度条
+# jProgress canvas 环形进度条
+
